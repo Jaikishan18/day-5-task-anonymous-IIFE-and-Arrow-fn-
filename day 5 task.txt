@@ -1,0 +1,463 @@
+PRINT ODD NUMBERS USING ANONMOUS AND IIFE
+    1) PROBLEM
+ 
+  a)  var oddnumbers= function(arr){
+for(var i=0; i<arr.length)
+{
+   if(arr[i] %2 !=0)
+{
+  console.log(arr[i])
+}
+}
+oddnumbers(arr);
+
+
+b)  var arr=[1,2,4,5,4,3,4];
+( function odd () {
+   for(var i=0; i<arr.length;i++)
+  {
+    if(arr[i]%2 !=0)
+   {
+     console.log(arr[i]);
+}) ();
+
+2) CONVERT ALL THE STRINGS TITLECAPS
+
+     a)  var arr = [kishan, ramesh, madhu];
+       var str = arr.split(" , ");
+       
+ (function Titlecaps(){
+   for(var i=0; i<str.length;i++)
+{
+  console.log(str[i][0].touppercase + arr[i].substr(1))
+}
+})();
+
+  b) var TitileCaps= function(arr) {
+ for(var i=0; i<str.length;i++)
+{
+  console.log(str[i][0].touppercase + arr[i].substr(1))
+}
+}
+
+3) Sum of all No. in an Array
+
+a) var num = parseInt[1,2,3,4,5]
+
+( function sum()
+{
+ for (var i=0;i<num.length;i++)
+{
+   var sum=0;
+   sum+=num[i]
+}
+console.log(sum)
+)(); 
+
+b)   var ano = function(arro) {
+    sum = 0
+    for (var i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    console.log(sum);
+}
+ano(arr); 
+
+4) RETURN ALL  PRIME NUMBERS IN AN ARRAY
+
+  a)  var nums=[ 1,3,7,8,10];
+       var anon= function(arr0){
+         for(let i=0;i<num.length;i++)
+        {
+           if(nums[i]==2{
+            return(nums[i]);
+           }
+          else{
+            for (var j=2;j<num.length;j++)
+               {
+               if(j == nums[i] - 1){
+               return(nums[i]);
+               }
+           else(nums[i]%2==0)
+           {
+              break;
+              }
+          }
+     }
+  };
+
+b)  ( function primenumber(){
+          for(let i=0;i<num.length;i++)
+        {
+           if(nums[i]==2{
+            return(nums[i]);
+           }
+          else{
+            for (var j=2;j<num.length;j++)
+               {
+               if(j == nums[i] - 1){
+               return(nums[i]);
+               }
+           else(nums[i]%2==0)
+           {
+              break;
+              }
+          }
+     }
+  })();
+
+5)return all palindromes in an array using IIFE function
+
+a)var arr = ["ashiq", 1, 343, 5775, 7, 77, "malayalam", "maam", 'ant'];
+
+(function() {
+    for (var k = 0; k < arr.length; k++) {
+        str = arr[k].toString();
+        if (str.length == 1) {
+            console.log(str);
+        }
+        if (str.length % 2 == 0) {
+            var L = str.length / 2;
+        } else {
+            var L = Math.floor(str.length / 2);
+        }
+        for (var i = 0; i < L; i++) {
+            if (str[i] != str[str.length - i - 1]) {
+                break;
+            } else if (i == L - 1) {
+                console.log(str);
+            }
+        }
+    }
+})();
+
+ 
+
+return all palindromes in an array using anonymous function
+
+
+b)    var ano = function(arro) {
+    for (var k = 0; k < arr.length; k++) {
+        str = arr[k].toString();
+        if (str.length == 1) {
+            console.log(str);
+        }
+        if (str.length % 2 == 0) {
+            var L = str.length / 2;
+        } else {
+            var L = Math.floor(str.length / 2);
+        }
+        for (var i = 0; i < L; i++) {
+            if (str[i] != str[str.length - i - 1]) {
+                break;
+            } else if (i == L - 1) {
+                console.log(str);
+            }
+        }
+    }
+}
+ano(arr);
+
+
+6)Return 2 sorted arrays of 2 sorted arrays using IIFE function
+   a)  var arr = [1, 2, 3, 6, 8, 9, 10, 12, 13];
+  var arr1 = [4, 6, 8, 9, 12, 14, 16, 20, 25];
+
+(function() {
+    if (arr.length % 2 == 0) {
+        var len = arr.length / 2;
+        console.log("median of first array is " + arr[len - 1] + " " + arr[len]);
+        console.log("median of second array is " + arr1[len - 1] + " " + arr1[len]);
+    } else {
+        var len = Math.floor(arr.length / 2);
+        console.log("median of first array is " + arr[len]);
+        console.log("median of second array is " + arr1[len]);
+    }
+
+})();
+
+return 2 sorted arrays of 2 sorted arrays using anonymous function
+b)   var ano = function(arro) {
+    if (arr.length % 2 == 0) {
+        var len = arr.length / 2;
+        console.log("median of first array is " + arr[len - 1] + " " + arr[len]);
+        console.log("median of second array is " + arr1[len - 1] + " " + arr1[len]);
+    } else {
+        var len = Math.floor(arr.length / 2);
+        console.log("median of first array is " + arr[len]);
+        console.log("median of second array is " + arr1[len]);
+    }
+}
+ano(arr);
+
+7)
+ a)remove duplicate from an array using IIFE function
+
+
+  var arr = [1, 2, 3, 6, 2, 8, 6, 1, 9, 9, 10, 12, 13, 6];
+
+(function() {
+    var out = [];
+    count = 0;
+    for (var i = arr.length - 1; i >= 1; i--) {
+        for (var k = i - 1; k >= 0; k--) {
+            if (arr[i] == arr[k]) {
+                break;
+            } else if (k == 0) {
+                out[count] = arr[i];
+                count += 1;
+            }
+        }
+        out[count] = arr[0];
+    }
+    for (i = out.length - 1; i >= 0; i--) {
+        console.log(out[i]);
+    }
+
+})();
+
+b)remove duplicate from an array using anonymous function
+var ano = function(arro) {
+    var out = [];
+    count = 0;
+    for (var i = arr.length - 1; i >= 1; i--) {
+        for (var k = i - 1; k >= 0; k--) {
+            if (arr[i] == arr[k]) {
+                break;
+            } else if (k == 0) {
+                out[count] = arr[i];
+                count += 1;
+            }
+        }
+        out[count] = arr[0];
+    }
+    for (i = out.length - 1; i >= 0; i--) {
+        console.log(out[i]);
+    }
+}
+ano(arr);
+
+8)a)
+rotate an array by k times and return rotated array using IIFE function
+
+var arr = [1, 2, 3, 6, 8, 6, 1, 9, 10, 12, 13];
+var k = 3;
+k = arr.length % k;
+(function() {
+    out = arr.slice(k + 1, arr.length);
+    var count = out.length;
+    for (var i = 0; i < k + 1; i++) {
+        out[count] = arr[i];
+        count += 1;
+    }
+    console.log(out);
+
+})();
+
+b))   rotate an array by k times and return rotated array using anonymous function
+
+
+var ano = function(arro) {
+    out = arr.slice(k + 1, arr.length);
+    var count = out.length;
+    for (var i = 0; i < k + 1; i++) {
+        out[count] = arr[i];
+        count += 1;
+    }
+    console.log(out);
+}
+ano(arr);
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) prime no. using arrow function
+
+
+const newArray=[1,3,2,5,10];
+const myPrime=newArray.filter(num=>{
+    for(let i=2;i<num;i++){
+        if(num%i===0)
+        {
+            return false;
+        }
+    }
+    return num!==1;
+});
+console.log(myPrime);
+
+2) Sum of number 
+
+const num = [10, 20, 30, 40,50,60,70,80,90,100] 
+const sum = (a, b) =>
+  a + b
+const sum = num.reduce(sum)
+console.log(sum);  
+
+3) Convert All the strings to titile caps in a string
+
+       const arr = [kishan, ramesh, madhu];
+       var str = arr.split(" , ");     
+      var TitileCaps= arr =>{
+      for(var i=0; i<str.length;i++)
+   {
+    var arr=(str[i][0].touppercase + arr[i].substr(1))
+}
+   return arr;
+}
+
+4) return odd numbers in an array
+    
+     const num=[1,3,6,5,4,4]
+     const odd =num.find(   num=>{
+    for(let i=2;i<num;i++){
+        if(num% 2 !=0)
+        {
+            return num;
+        }
+   
+});
+console.log(odd);
+
+5) Return all palindromes in an array
+
+var arr = ["ashiq", 1, 343, 5775, 7, 77, "malayalam", "maam", 'ant'];
+
+var palindrome = arr(values) =>{
+    
+    for (var k = 0; k < arr.length; k++) {
+        str = arr[k].toString();
+        if (str.length == 1) {
+            console.log(str);
+        }
+        if (str.length % 2 == 0) {
+            var L = str.length / 2;
+        } else {
+            var L = Math.floor(str.length / 2);
+        }
+        for (var i = 0; i < L; i++) {
+            if (str[i] != str[str.length - i - 1]) {
+                break;
+            } else if (i == L - 1) {
+                console.log(str);
+            }
+        }
+    }
+}
+
+    
+    
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+    
+    
+  
+
+
+
+
+   
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
